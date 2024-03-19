@@ -21,12 +21,10 @@
     <input type="hidden" name="fnc" value="">
     <input type="hidden" name="oxid" value="[{$oxid}]">
     <input type="hidden" name="editval[category__oxid]" value="[{$oxid}]">
-    [{oxhasrights object=$edit readonly=$readonly right=$smarty.const.RIGHT_VIEW}]
-        [{if $oxid != "-1" && !$edit->isDerived()}]
-            <input type="button" value="[{oxmultilang ident="CATEGORY_ORDER_SORTCATEGORIES"}]" class="edittext" onclick="JavaScript:showDialog('&cl=category_order&aoc=1&oxid=[{$oxid}]');"><br /><br />
-            <input type="button" value="Drag&Drop Artikelsortierung" class="edittext" onclick="JavaScript:showDialog('&cl=marm_category_order&aoc=1&oxid=[{$oxid}]');">
-        [{/if}]
-    [{/oxhasrights}]
+    [{if $oxid != "-1" && !$edit->isDerived()}]
+        <input type="button" value="[{oxmultilang ident="CATEGORY_ORDER_SORTCATEGORIES"}]" class="edittext" onclick="JavaScript:showDialog('&cl=category_order&aoc=1&oxid=[{$oxid}]');"><br /><br />
+        <input type="button" value="Drag&Drop Artikelsortierung" class="edittext" onclick="JavaScript:showDialog('&cl=marm_category_order&aoc=1&oxid=[{$oxid}]');">
+    [{/if}]
 </form>
 
 [{include file="bottomnaviitem.tpl"}]
