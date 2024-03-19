@@ -1,6 +1,6 @@
 {
   "name": "proudcommerce/categoryorder",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Drag & Drop Artikelsortierung",
   "type": "oxideshop-module",
   "license": [
